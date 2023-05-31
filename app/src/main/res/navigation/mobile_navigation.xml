@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/browserFragment">
+
+    <fragment
+        android:id="@+id/browserFragment"
+        android:name="com.xiaoxin.test.BrowserFragment"
+        android:label="BrowserFragment" >
+        <action
+            android:id="@+id/action2HelloWorldFragment"
+            app:destination="@id/helloWorldFragment" />
+        <action
+            android:id="@+id/action2Placeholder"
+            app:destination="@id/placeholderFragment" />
+        <action
+            android:id="@+id/action2InsertSeparators"
+            app:destination="@id/insertSeparatorsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/helloWorldFragment"
+        android:name="com.xiaoxin.test.ui.helloWorld.HelloWorldFragment"
+        android:label="HelloWorldFragment" />
+
+    <fragment
+        android:id="@+id/placeholderFragment"
+        android:name="com.xiaoxin.test.ui.placeholder.PlaceholderFragment"
+        android:label="PlaceholderFragment" />
+    <fragment
+        android:id="@+id/insertSeparatorsFragment"
+        android:name="com.xiaoxin.test.ui.insertSeparator.InsertSeparatorsFragment"
+        android:label="InsertSeparatorsFragment" />
+
+</navigation>
