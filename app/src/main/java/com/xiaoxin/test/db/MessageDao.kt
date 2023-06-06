@@ -17,7 +17,7 @@ interface MessageDao {
     fun getAllMessage(): PagingSource<Int, Message>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(msgs: List<Message>)
+    suspend fun insert(msgs: List<Message>)
 
 
 

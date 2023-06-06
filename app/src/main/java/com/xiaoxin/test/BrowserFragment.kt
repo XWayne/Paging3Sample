@@ -33,6 +33,12 @@ class BrowserFragment : Fragment() {
             toInsertSeparators.setOnClickListener {
                 findNavController().navigate(R.id.action2InsertSeparators)
             }
+            toLoadStates.setOnClickListener {
+                findNavController().navigate(R.id.action2LoadStateFragment)
+            }
+            toRemote.setOnClickListener {
+                findNavController().navigate(R.id.action2RemoteMediatorFragment)
+            }
         }
 
 

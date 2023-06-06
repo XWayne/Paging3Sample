@@ -9,7 +9,7 @@
         android:id="@+id/flow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:constraint_referenced_ids="toSimple,toPlaceHolder,toInsertSeparators"
+        app:constraint_referenced_ids="toSimple,toPlaceHolder,toInsertSeparators,toLoadStates,toRemote"
         android:orientation="vertical"
         app:flow_verticalStyle="packed"
         app:flow_verticalGap="18dp"
@@ -38,4 +38,22 @@
         android:text="列表分隔符"
         android:textAllCaps="false"
         />
+
+    <Button
+        android:id="@+id/toLoadStates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="状态管理"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/toRemote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络和数据库"
+        android:textAllCaps="false"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

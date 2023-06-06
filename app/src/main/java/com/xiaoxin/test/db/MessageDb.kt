@@ -29,10 +29,6 @@ abstract class MessageDb : RoomDatabase() {
                 )
                     .addCallback(object : RoomDatabase.Callback() {
                         override fun onCreate(db: SupportSQLiteDatabase) {
-//                            thread {
-//                                get(context).studentDao().insert(
-//                                    CHEESE_DATA.mapIndexed { index, s -> Student(id = index, name = s, msgCount = 0, time = System.currentTimeMillis()) })
-//                            }
                         }
                     }).build()
             }

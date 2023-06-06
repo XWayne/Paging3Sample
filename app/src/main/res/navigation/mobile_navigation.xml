@@ -18,6 +18,12 @@
         <action
             android:id="@+id/action2InsertSeparators"
             app:destination="@id/insertSeparatorsFragment" />
+        <action
+            android:id="@+id/action2LoadStateFragment"
+            app:destination="@id/loadStateFragment" />
+        <action
+            android:id="@+id/action2RemoteMediatorFragment"
+            app:destination="@id/remoteMediatorFragment" />
     </fragment>
 
     <fragment
@@ -33,5 +39,13 @@
         android:id="@+id/insertSeparatorsFragment"
         android:name="com.xiaoxin.test.ui.insertSeparator.InsertSeparatorsFragment"
         android:label="InsertSeparatorsFragment" />
+    <fragment
+        android:id="@+id/loadStateFragment"
+        android:name="com.xiaoxin.test.ui.loadState.LoadStateFragment"
+        android:label="LoadStateFragment" />
+    <fragment
+        android:id="@+id/remoteMediatorFragment"
+        android:name="com.xiaoxin.test.ui.remoteMediator.RemoteMediatorFragment"
+        android:label="RemoteMediatorFragment" />
 
 </navigation>
