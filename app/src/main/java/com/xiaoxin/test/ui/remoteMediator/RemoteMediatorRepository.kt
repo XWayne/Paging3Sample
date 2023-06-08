@@ -19,9 +19,9 @@ class MyRemoteMediator(
     private val database:MessageDb
 ):RemoteMediator<Int,Message>(){
 
-    override suspend fun initialize(): InitializeAction {
-        return InitializeAction.SKIP_INITIAL_REFRESH
-    }
+//    override suspend fun initialize(): InitializeAction {
+//        return InitializeAction.SKIP_INITIAL_REFRESH
+//    }
     override suspend fun load(
         loadType: LoadType,
         state: PagingState<Int, Message>
